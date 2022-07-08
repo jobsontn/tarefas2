@@ -1,0 +1,10 @@
+extends layout
+
+block body
+  h1 Tarejas Web
+  form(action="/login", method="POST")
+    label(for="email") E-mail:
+    input#email(type="email", name="email")
+    label(for="password") Senha:
+    input#password(type="password", name="password")
+    button(type="submit") Entrar
